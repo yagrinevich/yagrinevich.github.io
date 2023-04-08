@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>А сейчас я расскажу вам о событиях, прошедшей на этой неделе.</title>
-      <link>https://example.com/post/getting-started/</link>
+      <title>А сейчас я расскажу вам о событиях позапрошлой недели.</title>
+      <link>https://example.com/post/pozoproshlaya/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/getting-started/</guid>
+      <guid>https://example.com/post/pozoproshlaya/</guid>
       <description>&lt;h2 id=&#34;пост-о-прошедшей-неделе&#34;&gt;Пост о прошедшей неделе&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;В понедельник я была на главной репетиции в интерклубе, где мы готовились к предстоящему концерту. Также весь день до этого я изучала матанализ и посетила занятие по английскому языку.&lt;/li&gt;
