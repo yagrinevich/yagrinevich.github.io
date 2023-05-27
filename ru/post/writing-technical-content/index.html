@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: 27 мая 2023 г. --><html lang="ru-ru" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.7501ff0b8be63f67bb8c337b4db5f817.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Гриневич Юлия" />
+
+
+
+
+
+  
+
+<meta name="description" content="Легкие языки разметки: именно поэтому вы должны использовать AsciiDoc вместо обычной уценки
+Что такое «язык разметки»? Язык разметки — это набор кодов, который при применении к обычному тексту позволяет добавить одно или несколько из следующих свойств (среди прочих):" />
+
+
+
+  <link rel="alternate" hreflang="en" href="https://example.com/post/writing-technical-content/" />
+
+<link rel="alternate" hreflang="ru-ru" href="https://example.com/ru/post/writing-technical-content/" />
+<link rel="canonical" href="https://example.com/ru/post/writing-technical-content/" />
+
+
+
+  <link rel="manifest" href="/ru/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@wowchemy" />
+  <meta property="twitter:creator" content="@wowchemy" />
+<meta property="twitter:image" content="https://example.com/ru/post/writing-technical-content/featured.png" />
+<meta property="og:site_name" content="Academic" />
+<meta property="og:url" content="https://example.com/ru/post/writing-technical-content/" />
+<meta property="og:title" content="Легковесные языки разметки | Academic" />
+<meta property="og:description" content="Легкие языки разметки: именно поэтому вы должны использовать AsciiDoc вместо обычной уценки
+Что такое «язык разметки»? Язык разметки — это набор кодов, который при применении к обычному тексту позволяет добавить одно или несколько из следующих свойств (среди прочих):" /><meta property="og:image" content="https://example.com/ru/post/writing-technical-content/featured.png" /><meta property="og:locale" content="ru-ru" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2022-04-08T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2022-04-08T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://example.com/ru/post/writing-technical-content/"
+  },
+  "headline": "Легковесные языки разметки",
+  
+  "image": [
+    "https://example.com/ru/post/writing-technical-content/featured.png"
+  ],
+  
+  "datePublished": "2022-04-08T00:00:00Z",
+  "dateModified": "2022-04-08T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Гриневич Юлия"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Academic",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Легкие языки разметки: именно поэтому вы должны использовать AsciiDoc вместо обычной уценки\nЧто такое «язык разметки»? Язык разметки — это набор кодов, который при применении к обычному тексту позволяет добавить одно или несколько из следующих свойств (среди прочих):"
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Легковесные языки разметки | Academic</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="07e02bccc368a192a0c76c44918396c3" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Поиск</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Поиск ..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Поиск ...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/ru/">Academic</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Переключить навигацию">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/ru/">Academic</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://independent.academia.edu/%D0%93%D1%80%D0%B8%D0%BD%D0%B5%D0%B2%D0%B8%D1%87%D0%AE%D0%BB%D0%B8%D1%8F" data-toggle="tooltip" data-placement="bottom" title="Hi, cats!" target="_blank" rel="noopener" aria-label="Hi, cats!">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Поиск"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+        <li class="nav-item dropdown i18n-dropdown">
+          <a href="#" class="nav-link " data-toggle="dropdown"
+             aria-haspopup="true" aria-label="Languages">
+            <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item dropdown-item-active">
+              <span>Русский</span>
+            </div>
+            
+            <a class="dropdown-item" href="https://example.com/post/writing-technical-content/">
+              <span>English</span>
+            </a>
+            
+          </div>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Легковесные языки разметки</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    апр. 8, 2022
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 мин. для прочтения
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 300px; max-height: 225px;">
+  <div style="position: relative">
+    <img src="/ru/post/writing-technical-content/featured_hucbdb39da09e4439a10f26a1d00777e36_8412_1200x2500_fit_q75_h2_lanczos_3.webp" width="300" height="225" alt="" class="featured-image">
+    <span class="article-header-caption">Image credit: <a href="https://unsplash.com/photos/OGZtQF8iC0g" target="_blank" rel="noopener"><strong>John Moeses Bauan</strong></a></span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Легкие языки разметки: именно поэтому вы должны использовать AsciiDoc вместо обычной уценки</p>
+<h2 id="что-такое-язык-разметки">Что такое «язык разметки»?</h2>
+<p>Язык разметки — это набор кодов, который при применении к обычному тексту позволяет добавить одно или несколько из следующих свойств (среди прочих):</p>
+<pre><code>Определите текст
+Структурировать текст
+Опишите макет текста
+Украсить текст
+</code></pre>
+<p>Один язык разметки, с которым вы сталкиваетесь каждый день (если вы не отшельник), — это язык разметки гипертекста, или HTML. Веб-сайты и приложения, которые приносят вам новости и показывают вашу электронную почту, построены, по крайней мере частично, с разметкой HTML использует теги в качестве механизма для разметки необработанного текстового содержимого. Например, рассмотрим следующий фрагмент HTML:</p>
+<h3 id="код">Код</h3>
+<p>Если вы хотите воспользоваться преимуществами языков разметки, например, путем публикации HTML-страницы в Интернете или преобразования файла DocBook в PDF, чтобы его можно было распечатать, вам нужно было сделать одну из двух вещей. С одной стороны, вы можете потратить время, изучая эти языки изнутри и снаружи, записывая их вручную, а затем трижды проверяя свою работу. Или вы могли бы инвестировать деньги в инструмент, который управляет сложностью их для вас.</p>
+<p>К счастью, некоторые предприимчивые разработчики придумали третий вариант. Они создали новые языки разметки, которые содержали многие (в некоторых случаях большинство или все) функции более тяжелых аналогов, но значительно упростили синтаксис. Эти «легкие» языки включают в себя знакомую Markdown а также Asciidoc, формат Egc в режиме Org и синтаксис Mediawiki.</p>
+<h3 id="история">История</h3>
+<p>Облегченные языки разметки изначально использовались на текстовых дисплеях, которые не могли отображать символы, выделенные курсивом или жирный, поэтому пришлось разработать неформальные методы передачи этой информации. Этот выбор форматирования, естественно, был применен к обычным текстовым сообщениям электронной почты. Консольные браузеры также могут прибегать к аналогичным соглашениям об отображении.</p>
+<p>В 1986 году международный стандарт SGML предоставил средства для определения и анализа облегченных языков разметки с использованием грамматик и импликации тегов. 1998 W3C XML - это профиль SGML, в котором эти возможности отсутствуют. Однако определение типа документа (DTD) SGML для любого из перечисленных ниже языков неизвестно.</p>
+<h3 id="типы">Типы</h3>
+<p>Легкие языки разметки можно разделить на категории по типам их тегов. Подобно HTML (полужирный), в некоторых языках используются именованные элементы, которые имеют общий формат для начальных и конечных тегов (например, BBCode [b] жирный [ / b]), тогда как правильные упрощенные языки разметки ограничены ASCII -только знаками препинания и другими небуквенными символами для тегов, но некоторые также смешивают оба стиля (например, Textile bq.) или разрешить встроенный HTML (например, Markdown ), возможно, расширенный пользовательскими элементами (например, MediaWiki source).</p>
+<p>Большинство языков различают разметку для строк или блоков и для более коротких отрезков текста, но некоторые поддерживают только встроенную разметку.</p>
+<p>Некоторые языки разметки предназначены для определенной цели, например, для документирования компьютерного кода (например, POD, RD ) или для преобразования в определенный выходной формат (обычно HTML) и ничего больше, другие более вообще в приложении. Сюда входит, ориентированы ли они на текстовое представление или на сериализацию данных.</p>
+<p>Языки, ориентированные на представление, включают AsciiDoc, atx, BBCode, креольский, Crossmark, Epytext, Haml, JsonML, MakeDoc, Markdown, Org-mode, POD, reST, RD, Setext, SiSU, SPIP, Xupl, Texy!, Текстиль, txt2tags, UDO и Wikitext.</p>
+<p>Языки, ориентированные на сериализацию данных, включают Curl (гомоиконный, но также читает JSON; каждый объект сериализуется), JSON и YAML.</p>
+<h3 id="сравнение-языковых-функций">Сравнение языковых функций</h3>
+<p>Собственный синтаксис Markdown не поддерживает атрибуты класса или атрибуты id; однако, поскольку Markdown поддерживает включение собственного HTML-кода, эти функции могут быть реализованы с использованием прямого HTML. (Некоторые расширения могут поддерживать эти функции.)</p>
+<p>Собственный синтаксис txt2tags не поддерживает атрибуты класса или атрибуты id; однако, поскольку txt2tags поддерживает включение собственного кода HTML в области с тегами, эти функции могут быть реализованы с использованием прямого HTML при сохранении в целевой HTML.</p>
+<h3 id="сравнение-синтаксиса-упрощенного-языка-разметки">Сравнение синтаксиса упрощенного языка разметки</h3>
+<p>Хотя обычно документируется выделение текста курсивом и полужирным шрифтом, большинство облегченных процессоров разметки выводят семантические элементы HTML emи сильныйвместо этого. Моноширинный текст может привести либо к семантическому коду, либо к презентационным элементам tt. Некоторые языки проводят различие, например Текстиль, или позволить пользователю легко настроить вывод, например Texy.</p>
+<p>LML иногда различаются разметкой из нескольких слов, где некоторые требуют, чтобы символы разметки заменяли межсловные пробелы (инфикс). Для некоторых языков требуется один символ в качестве префикса и суффикса, для других - удвоение или даже утроение или поддержка обоих символов с немного другим значением, например разные уровни акцента.</p>
+<h3 id="синтаксис-заголовка">Синтаксис заголовка</h3>
+<p>Заголовки обычно доступны на шести уровнях, но верхний часто зарезервирован для того, чтобы содержать то же самое, что и заголовок документа, который может быть установлен извне. В некоторых документах уровни могут быть связаны с типами подразделений, например часть, глава, раздел, статья или абзац.</p>
+<p>Большинство языков LML следуют одному из двух стилей заголовков: либо Setext -подобное подчеркивание, или -подобные atx -подобные маркеры строки, либо они поддерживают оба стиля.</p>
+<h3 id="заголовки-с-префиксом">Заголовки с префиксом</h3>
+<p>Второй стиль основан на повторяющихся маркерах (например, хэш #, равно =или звездочка *) в начале самого заголовка, где количество повторений указывает (иногда обратный) уровень заголовка. Большинство языков также поддерживают дублирование маркеров в конце строки, но в то время как некоторые делают их обязательными, другие даже не ожидают совпадения их номеров.</p>
+<p>Microsoft Word поддерживает автоматическое форматирование абзацев в качестве заголовков, если они не содержат более нескольких слов, без точки в конце и если пользователь дважды нажимает клавишу ввода. Для более низких уровней пользователь может нажать клавишу табулятора соответствующее количество раз перед вводом текста, т. Е. С одной по восемь вкладок для уровней заголовков со второго по девятый.</p>
+<h3 id="синтаксис-ссылки">Синтаксис ссылки</h3>
+<p>Гиперссылки могут быть добавлены встроенными, что может загромождать код из-за длинных URL-адресов, либо с именованным псевдонимомили пронумерованным idссылки на строки, не содержащие ничего, кроме адреса и связанных атрибутов, и часто могут находиться в любом месте документа. Большинство языков позволяют автору указывать текст Textдля отображения вместо простого адреса <a href="http://example.com" target="_blank" rel="noopener">http://example.com</a> , а некоторые также предоставляют методы для установки другой заголовок ссылки Заголовок, который может содержать дополнительную информацию о месте назначения.</p>
+<p>LML, предназначенные для особых настроек, например вики-страницы или документация по коду могут автоматически создавать именованные привязки (для заголовков, функций и т. д.) внутри документа, ссылаться на связанные страницы (возможно, в другом пространстве имен) или обеспечивать текстовый поиск связанных ключевых слов.</p>
+<p>В большинстве языков для заключения ссылок используются (двойные) квадратные или угловые скобки, но вряд ли какие-либо два языка полностью совместимы. Многие могут автоматически распознавать и анализировать абсолютные URL-адреса внутри текста без дополнительной разметки.</p>
+<h3 id="синтаксис-списка">Синтаксис списка</h3>
+<p>HTML требует явного элемента для списка с указанием его типа и по одному для каждого элемента списка, но большинству облегченных языков разметки требуются только разные префиксы строк для маркеров или перечисленные элементы. Некоторые языки используют отступы для вложенных списков, другие используют повторяющиеся маркеры родительского списка.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fru%2Fpost%2Fwriting-technical-content%2F&amp;text=%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%D0%B2%D0%B5%D1%81%D0%BD%D1%8B%D0%B5&#43;%D1%8F%D0%B7%D1%8B%D0%BA%D0%B8&#43;%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fexample.com%2Fru%2Fpost%2Fwriting-technical-content%2F&amp;t=%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%D0%B2%D0%B5%D1%81%D0%BD%D1%8B%D0%B5&#43;%D1%8F%D0%B7%D1%8B%D0%BA%D0%B8&#43;%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%D0%B2%D0%B5%D1%81%D0%BD%D1%8B%D0%B5%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B8%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8&amp;body=https%3A%2F%2Fexample.com%2Fru%2Fpost%2Fwriting-technical-content%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexample.com%2Fru%2Fpost%2Fwriting-technical-content%2F&amp;title=%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%D0%B2%D0%B5%D1%81%D0%BD%D1%8B%D0%B5&#43;%D1%8F%D0%B7%D1%8B%D0%BA%D0%B8&#43;%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%D0%B2%D0%B5%D1%81%D0%BD%D1%8B%D0%B5&#43;%D1%8F%D0%B7%D1%8B%D0%BA%D0%B8&#43;%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20https%3A%2F%2Fexample.com%2Fru%2Fpost%2Fwriting-technical-content%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fexample.com%2Fru%2Fpost%2Fwriting-technical-content%2F&amp;title=%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%D0%B2%D0%B5%D1%81%D0%BD%D1%8B%D0%B5&#43;%D1%8F%D0%B7%D1%8B%D0%BA%D0%B8&#43;%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://example.com/"><img class="avatar mr-3 avatar-circle" src="/ru/authors/admin/avatar_huc9fbc0ef8f294aa2a1b435f47e589d29_111597_270x270_fill_q75_lanczos_center.jpg" alt="Гриневич Юлия"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://example.com/">Гриневич Юлия</a></h5>
+      <h6 class="card-subtitle">Студентка первого курса</h6>
+      <p class="card-text">Творческий человек, который совмещает в себе технически и гуманитарные знания. Занимается танцами, рисует и любит создавать что-то креативное. А ещё любит математику.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/ru/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://independent.academia.edu/%D0%93%D1%80%D0%B8%D0%BD%D0%B5%D0%B2%D0%B8%D1%87%D0%AE%D0%BB%D0%B8%D1%8F" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://myaccount.google.com/?hl=ru" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/yagrinevich" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/signup.SignUp.html" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/ru/uploads/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.d54f56b82d750120e4b5e28187a894f7.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/ru/js/wowchemy.min.5e2cb00821f488b289cb7745d0128154.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

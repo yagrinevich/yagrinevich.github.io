@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: April 8, 2023 --><html lang="en-us" >
+<!-- Last Published: May 27, 2023 --><html lang="en-us" >
 
 
 <head>
@@ -276,9 +276,11 @@
 
   
 
-<meta name="description" content="В чем разница между непрерывной интеграцией, непрерывной поставкой и непрерывным развертыванием (CI/CD)?" />
+<meta name="description" content="What is the difference between continuous integration, continuous delivery, and continuous deployment (CI/CD)?" />
 
 
+
+  <link rel="alternate" hreflang="ru" href="https://example.com/ru/post/nepreryvnaya/" />
 
 <link rel="alternate" hreflang="en-us" href="https://example.com/post/nepreryvnaya/" />
 <link rel="canonical" href="https://example.com/post/nepreryvnaya/" />
@@ -317,8 +319,8 @@
 <meta property="twitter:image" content="https://example.com/post/nepreryvnaya/featured.png" />
 <meta property="og:site_name" content="Academic" />
 <meta property="og:url" content="https://example.com/post/nepreryvnaya/" />
-<meta property="og:title" content="Непрерывная интеграция и непрерывное развертывание (CI/CD) | Academic" />
-<meta property="og:description" content="В чем разница между непрерывной интеграцией, непрерывной поставкой и непрерывным развертыванием (CI/CD)?" /><meta property="og:image" content="https://example.com/post/nepreryvnaya/featured.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Continuous Integration and Continuous Deployment (CI/CD) | Academic" />
+<meta property="og:description" content="What is the difference between continuous integration, continuous delivery, and continuous deployment (CI/CD)?" /><meta property="og:image" content="https://example.com/post/nepreryvnaya/featured.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -355,7 +357,7 @@
     "@type": "WebPage",
     "@id": "https://example.com/post/nepreryvnaya/"
   },
-  "headline": "Непрерывная интеграция и непрерывное развертывание (CI/CD)",
+  "headline": "Continuous Integration and Continuous Deployment (CI/CD)",
   
   "image": [
     "https://example.com/post/nepreryvnaya/featured.png"
@@ -377,7 +379,7 @@
       "url": "https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "В чем разница между непрерывной интеграцией, непрерывной поставкой и непрерывным развертыванием (CI/CD)?"
+  "description": "What is the difference between continuous integration, continuous delivery, and continuous deployment (CI/CD)?"
 }
 </script>
 
@@ -399,7 +401,7 @@
 
 
   
-  <title>Непрерывная интеграция и непрерывное развертывание (CI/CD) | Academic</title>
+  <title>Continuous Integration and Continuous Deployment (CI/CD) | Academic</title>
 
   
   
@@ -758,7 +760,7 @@
           
             
             <li class="nav-item d-none d-lg-inline-flex">
-              <a class="nav-link" href="https://twitter.com/GeorgeCushen" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+              <a class="nav-link" href="https://independent.academia.edu/%D0%93%D1%80%D0%B8%D0%BD%D0%B5%D0%B2%D0%B8%D1%87%D0%AE%D0%BB%D0%B8%D1%8F" data-toggle="tooltip" data-placement="bottom" title="Hi, cats!" target="_blank" rel="noopener" aria-label="Hi, cats!">
                 <i class="fab fa-twitter" aria-hidden="true"></i>
               </a>
             </li>
@@ -795,6 +797,22 @@
         
 
         
+        
+        <li class="nav-item dropdown i18n-dropdown">
+          <a href="#" class="nav-link " data-toggle="dropdown"
+             aria-haspopup="true" aria-label="Languages">
+            <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item dropdown-item-active">
+              <span>English</span>
+            </div>
+            
+            <a class="dropdown-item" href="https://example.com/ru/post/nepreryvnaya/">
+              <span>Русский</span>
+            </a>
+            
+          </div>
+        </li>
         
 
       </ul>
@@ -841,10 +859,10 @@
 
 
 <div class="article-container pt-3">
-  <h1>Непрерывная интеграция и непрерывное развертывание (CI/CD)</h1>
+  <h1>Continuous Integration and Continuous Deployment (CI/CD)</h1>
 
   
-  <p class="page-subtitle">Узнайте разницу между этими непрерывными методами</p>
+  <p class="page-subtitle">Learn the difference between these continuous methods</p>
   
 
   
@@ -917,19 +935,19 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h2 id="непрерывная-интеграция">Непрерывная интеграция</h2>
-<p>Разработчики, применяющие непрерывную интеграцию, при каждой возможности выполняют слияние своих изменений с основной веткой. Изменения, внесенные разработчиком, проверяются путем создания сборки и запуска автоматических тестов на этой сборке. С таким подходом вы избегаете сложностей при интеграции, когда нужно ждать дня релиза, чтобы выполнить слияние изменений в соответствующей ветке.</p>
-<p>При использовании непрерывной интеграции уделяется большое внимание автоматизации тестирования, в результате которого при интеграции новых коммитов в основную ветку работа приложения не нарушается.</p>
-<h2 id="непрерывная-поставка">Непрерывная поставка</h2>
-<p>Непрерывная поставка является продолжением непрерывной интеграции, поскольку при ней происходит автоматическое развертывание всех изменений кода в тестовой и (или) рабочей среде после этапа сборки.</p>
-<p>Это значит, что автоматизирован не только процесс тестирования, но и процесс выпуска продукта, поэтому приложение можно развернуть в любое время одним нажатием.</p>
-<p>Теоретически при непрерывной поставке вы можете выпускать релизы ежедневно, еженедельно, каждые две недели или с любой другой периодичностью, актуальной для бизнеса. Однако если вы действительно хотите получить преимущества от непрерывной поставки, следует выполнять развертывание в рабочей среде как можно раньше, обеспечивая выпуск небольших пакетов изменений, в которых легко найти ошибку в случае проблем.</p>
-<h2 id="непрерывное-развертывание">Непрерывное развертывание</h2>
-<p>Непрерывное развертывание идет на один шаг дальше, чем непрерывная поставка. При этом подходе каждое изменение, которое проходит все стадии производственного конвейера, выпускается для клиентов. Вмешательство человека не требуется, и развертыванию нового изменения в рабочую среду может помешать только ошибка во время теста.</p>
-<p>Непрерывное развертывание — это отличный способ ускорить цикл обратной связи с клиентами и избавить команду от лишнего напряжения, отменив «день релиза». Разработчики могут сосредоточиться на создании ПО. Они видят, как их код запускается в работу за считанные минуты, стоит только закончить.</p>
-<h2 id="как-эти-подходы-взаимосвязаны-друг-с-другом">Как эти подходы взаимосвязаны друг с другом</h2>
-<p>Проще говоря, непрерывная интеграция является частью как непрерывной поставки, так и непрерывного развертывания. А непрерывное развертывание похоже на непрерывную поставку, за исключением того, что релизы выполняются автоматически.
-Непрерывное развертывание</p>
+      <h2 id="continuous-integration">Continuous Integration</h2>
+<p>Developers who use continuous integration merge their changes back into the main branch whenever possible. Changes made by a developer are verified by creating an assembly and running automated tests on that assembly. With this approach, you avoid the hassle of integrating when you have to wait for release day to merge changes in the relevant branch.</p>
+<p>When using continuous integration, a lot of attention is paid to test automation, as a result of which, when integrating new commits into the main branch, the application does not break.</p>
+<h2 id="continuous-supply">Continuous supply</h2>
+<p>Continuous delivery is an extension of continuous integration because it automatically deploys all code changes to the test and/or production environment after the build step.</p>
+<p>This means that not only the testing process is automated, but also the product release process, so the application can be deployed at any time with one click.</p>
+<p>Theoretically, with continuous delivery, you can release daily, weekly, every two weeks, or any other business-relevant frequency. However, if you really want to take advantage of continuous delivery, you should deploy to production as early as possible, ensuring that small patches are released that are easy to find bugs in case of problems.</p>
+<h2 id="continuous-deployment">Continuous deployment</h2>
+<p>Continuous Deployment goes one step further than Continuous Delivery. With this approach, every change that goes through all stages of the production pipeline is released to customers. No human intervention is required, and only an error during a test can prevent a new change from being deployed to production.</p>
+<p>Continuous Deployment is a great way to speed up the customer feedback cycle and take the pressure off your team by canceling the “release day”. Developers can focus on creating software. They see how their code is launched in minutes, as soon as it is finished.</p>
+<h2 id="how-do-these-approaches-relate-to-each-other">How do these approaches relate to each other</h2>
+<p>Simply put, continuous integration is part of both continuous delivery and continuous deployment. And continuous deployment is similar to continuous delivery, except that releases happen automatically.
+Continuous Deployment</p>
 <p>This post was created with Jupyter. The orginal files can be found at <a href="https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter" target="_blank" rel="noopener">https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter</a></p>
 
     </div>
@@ -957,7 +975,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F&amp;text=%D0%9D%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%B0%D1%8F&#43;%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F&#43;%D0%B8&#43;%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D0%B5&#43;%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&#43;%28CI%2FCD%29" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F&amp;text=Continuous&#43;Integration&#43;and&#43;Continuous&#43;Deployment&#43;%28CI%2FCD%29" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -974,7 +992,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F&amp;t=%D0%9D%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%B0%D1%8F&#43;%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F&#43;%D0%B8&#43;%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D0%B5&#43;%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&#43;%28CI%2FCD%29" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F&amp;t=Continuous&#43;Integration&#43;and&#43;Continuous&#43;Deployment&#43;%28CI%2FCD%29" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -993,7 +1011,7 @@
         
       
       <li>
-        <a href="mailto:?subject=%D0%9D%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%B0%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B8%20%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%28CI%2FCD%29&amp;body=https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Continuous%20Integration%20and%20Continuous%20Deployment%20%28CI%2FCD%29&amp;body=https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1010,7 +1028,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F&amp;title=%D0%9D%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%B0%D1%8F&#43;%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F&#43;%D0%B8&#43;%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D0%B5&#43;%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&#43;%28CI%2FCD%29" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F&amp;title=Continuous&#43;Integration&#43;and&#43;Continuous&#43;Deployment&#43;%28CI%2FCD%29" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1027,7 +1045,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=%D0%9D%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%B0%D1%8F&#43;%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F&#43;%D0%B8&#43;%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D0%B5&#43;%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&#43;%28CI%2FCD%29%20https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Continuous&#43;Integration&#43;and&#43;Continuous&#43;Deployment&#43;%28CI%2FCD%29%20https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1044,7 +1062,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F&amp;title=%D0%9D%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%B0%D1%8F&#43;%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F&#43;%D0%B8&#43;%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D0%B5&#43;%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&#43;%28CI%2FCD%29" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fexample.com%2Fpost%2Fnepreryvnaya%2F&amp;title=Continuous&#43;Integration&#43;and&#43;Continuous&#43;Deployment&#43;%28CI%2FCD%29" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1083,8 +1101,8 @@
 
     <div class="media-body">
       <h5 class="card-title"><a href="https://example.com/">Гриневич Юлия</a></h5>
-      <h6 class="card-subtitle">Студентка первого курса</h6>
-      <p class="card-text">Творческий человек, который совмещает в себе технически и гуманитарные знания. Занимается танцами, рисует и любит создавать что-то креативное. А ещё любит математику.</p>
+      <h6 class="card-subtitle">Student of 1 course</h6>
+      <p class="card-text">A creative person who combines technical and humanitarian knowledge. She dances, draws and loves to create something creative. He also loves math.</p>
       <ul class="network-icon" aria-hidden="true">
   
     
@@ -1116,7 +1134,7 @@
       
     
     <li>
-      <a href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
+      <a href="https://independent.academia.edu/%D0%93%D1%80%D0%B8%D0%BD%D0%B5%D0%B2%D0%B8%D1%87%D0%AE%D0%BB%D0%B8%D1%8F" target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
@@ -1133,7 +1151,7 @@
       
     
     <li>
-      <a href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
+      <a href="https://myaccount.google.com/?hl=ru" target="_blank" rel="noopener">
         <i class="fas fa-graduation-cap"></i>
       </a>
     </li>
@@ -1150,7 +1168,7 @@
       
     
     <li>
-      <a href="https://github.com/gcushen" target="_blank" rel="noopener">
+      <a href="https://github.com/yagrinevich" target="_blank" rel="noopener">
         <i class="fab fa-github"></i>
       </a>
     </li>
@@ -1167,7 +1185,7 @@
       
     
     <li>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+      <a href="https://www.researchgate.net/signup.SignUp.html" target="_blank" rel="noopener">
         <i class="fab fa-linkedin"></i>
       </a>
     </li>
